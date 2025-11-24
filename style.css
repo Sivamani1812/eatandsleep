@@ -2100,13 +2100,13 @@ textarea.is-invalid {
 .sec-subtitle2,
 .sec-subtitle {
   display: block;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--theme-color);
   font-family: var(--body-font);
   font-weight: 500;
-  letter-spacing: 0.22em;
+  /* letter-spacing: 0.22em; */
   line-height: 1;
-  margin-top: -0.1em;
+  margin-top: -0.2em;
   margin-bottom: 18px;
 }
 
@@ -14477,3 +14477,164 @@ tr:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 20px rgba(0,0,0,0.2);
   }
+
+
+ .trending-section {
+  background: #f7f6ff;
+}
+
+/* Modern Card */
+.modern-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* Hover Glow */
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+}
+
+/* Shine Light Effect */
+.modern-card .shine {
+  position: absolute;
+  top: -120%;
+  left: -120%;
+  width: 250%;
+  height: 250%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.35) 45%,
+    transparent 90%
+  );
+  transform: rotate(25deg);
+  transition: 0.8s;
+}
+
+.modern-card:hover .shine {
+  top: -20%;
+  left: -20%;
+}
+
+/* Bullet Points */
+.work-list {
+  padding-left: 18px;
+  margin-top: 15px;
+}
+.work-list li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 8px;
+}
+.work-list li::before {
+  content: "•";
+  position: absolute;
+  left: -10px;
+  color: #7a4bff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Extra text styling */
+.extra-text {
+  line-height: 1.7;
+}
+
+.highlight-text {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #4b3cff;
+}
+
+/* Background Style */
+.approach-super-section {
+  position: relative;
+  background: linear-gradient(180deg, #fff, #faf5ff);
+}
+
+/* Gradient Title */
+.gradient-title {
+  background: linear-gradient(90deg, #ff7474, #ffbcbc, #ff7474);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* Super Approach Box */
+.approach-super-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  border: 2px solid #f6e2e2;
+}
+
+/* Hover Glow + Lift */
+.approach-super-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 22px 55px rgba(255,140,140,0.35);
+  border-color: rgba(154, 86, 58, 1.0)
+;
+}
+
+/* Shine Effect Swipe */
+.approach-super-box .shine {
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 250%;
+  height: 250%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.45), transparent);
+  transform: rotate(25deg);
+  transition: 0.8s ease;
+}
+.approach-super-box:hover .shine {
+  top: -20%;
+  left: -20%;
+}
+
+/* Titles */
+.approach-super-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.approach-super-box p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Pulse Button */
+.pulse-btn {
+  animation: pulseShadow 1.8s infinite ease-in-out;
+}
+@keyframes pulseShadow {
+  0% { box-shadow: 0 0 0px rgba(154, 86, 58, 1.0); }
+  50% { box-shadow: 0 0 22px rgba(154, 86, 58, 1.0)
+; }
+  100% { box-shadow: 0 0 0px rgba(154, 86, 58, 1.0)
+; }
+}
+
+/* CTA */
+.cta-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.cta-desc {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 15px;
+}
